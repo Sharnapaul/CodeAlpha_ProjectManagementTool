@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlphaManager | Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>Alpha Project Manager 📋</nav>
+    
+    <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Enter new task...">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="board">
+        <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>To Do</h2>
+            <div class="task-list" id="todo-list"></div>
+        </div>
+        <div class="column" id="doing" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Doing</h2>
+            <div class="task-list" id="doing-list"></div>
+        </div>
+        <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Done</h2>
+            <div class="task-list" id="done-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
